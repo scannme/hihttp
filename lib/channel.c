@@ -5,7 +5,7 @@ struct channel *channel_new(int fd, int events,
         event_read_callback eventReadCallback,
         event_write_callback eventWriteCallback,
         void *data) {
-    struct channel *chan = malloc(sizeof(struct channel));
+    struct channel *chan =(struct channel *) malloc(sizeof(struct channel));
 
     if (NULL != chan) {
         chan->fd = fd;
