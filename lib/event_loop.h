@@ -31,4 +31,5 @@ struct event_loop {
 };
 
 struct event_loop *event_loop_init();
+int event_loop_run(struct event_loop *eventLoop);
 #endif
